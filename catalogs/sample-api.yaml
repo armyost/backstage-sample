@@ -1,0 +1,98 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: SAMPLE_GRPC_API
+  description: This is sample gRPC API description. You can find the gRPC spec in the links below.
+  links:
+    - url: https://github.com/armyost/protobuf-sample/blob/main/src/hero/hero.proto
+      title: gRPC SourceCode Link
+      icon: code
+  dependencyOf:
+    - component:default/microservicesB
+  tags:
+    - microservicesA
+    - grpc
+spec:
+  type: grpc
+  lifecycle: production
+  owner: Scrum-Team-A
+  apiConsumedBy:
+    - microservicesB
+  system: SystemA
+  definition:
+    $text: https://github.com/armyost/protobuf-sample/blob/main/src/hero/hero.proto
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: SAMPLE_REST_API
+  description: This is sample REST API description. You can find the OpenAPI spec in the links below.
+  links:
+    - url: https://github.com/armyost/protobuf-sample/blob/main/src/hero/hero.proto
+      title: gRPC SourceCode Link
+      icon: code
+  dependencyOf:
+    - component:default/microservicesB
+  tagsList:
+    - microservicesA
+    - rest
+spec:
+  type: openapi
+  lifecycle: production
+  owner: Scrum-Team-A
+  apiConsumedBy:
+    - microservicesB
+  system: SystemA
+  definition: 
+    $text: https://github.com/ocean-network-express/om-pom-bff-external/blob/develop/docs/swagger.yaml
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: SAMPLE_GRAPHQL_API
+  description: This is sample GraphQL API description. You can find the GraphQL spec in the links below.
+  links:
+    - url: https://github.com/armyost/backstage-sample/blob/main/schemas/schema.gql
+      title: graphql Spec
+      icon: docs
+  dependencyOf:
+    - component:default/microservicesB
+  tagsList:
+    - microservicesA
+    - graphql
+spec:
+  type: graphql
+  lifecycle: production
+  owner: Scrum-Team-A
+  apiConsumedBy:
+    - microservicesB
+  system: SystemA
+  definition: 
+    $text: https://github.com/armyost/backstage-sample/blob/main/schemas/schema.gql
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: SAMPLE_ASYNC_API
+  description: This is sample AsyncAPI description. You can find the AsyncAPI spec in the links below.
+  links:
+    - url: https://github.com/armyost/backstage-sample/blob/main/schemas/asyncapi-example.yaml
+      title: Async API Spec
+      icon: docs
+  dependencyOf:
+    - component:default/microservicesB
+  tagsList:
+    - microservicesA
+    - asyncapi
+spec:
+  type: asyncapi
+  lifecycle: production
+  owner: Scrum-Team-A
+  apiConsumedBy:
+    - microservicesB
+  system: SystemA
+  definition: 
+    $text: https://github.com/armyost/backstage-sample/blob/main/schemas/asyncapi-example.yaml
