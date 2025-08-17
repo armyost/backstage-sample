@@ -4,7 +4,7 @@ metadata:
   name: SAMPLE_GRPC_API_V1
   description: This is sample gRPC API description. You can find the gRPC spec in the links below.
   links:
-    - url: https://github.com/armyost/protobuf-sample/blob/main/src/hero/hero.proto
+    - url: https://github.com/armyost/backstage-sample/blob/main/schemas/example.proto
       title: gRPC SourceCode Link
       icon: code
   dependencyOf:
@@ -20,7 +20,7 @@ spec:
     - microservices-b
   system: system-a
   definition:
-    $text: https://github.com/armyost/protobuf-sample/blob/main/src/hero/hero.proto
+    $text: https://github.com/armyost/backstage-sample/blob/main/schemas/example.proto
 
 ---
 apiVersion: backstage.io/v1alpha1
