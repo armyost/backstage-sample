@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: SAMPLE_GRPC_API
+  name: SAMPLE_GRPC_API_V1
   description: This is sample gRPC API description. You can find the gRPC spec in the links below.
   links:
     - url: https://github.com/armyost/protobuf-sample/blob/main/src/hero/hero.proto
@@ -26,7 +26,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: SAMPLE_REST_API
+  name: SAMPLE_REST_API_V1
   description: This is sample REST API description. You can find the OpenAPI spec in the links below.
   links:
     - url: https://github.com/armyost/protobuf-sample/blob/main/src/hero/hero.proto
@@ -51,7 +51,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: SAMPLE_GRAPHQL_API
+  name: SAMPLE_GRAPHQL_API_V1
   description: This is sample GraphQL API description. You can find the GraphQL spec in the links below.
   links:
     - url: https://github.com/armyost/backstage-sample/blob/main/schemas/schema.gql
@@ -76,7 +76,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: SAMPLE_ASYNC_API
+  name: SAMPLE_ASYNC_API_V1
   description: This is sample AsyncAPI description. You can find the AsyncAPI spec in the links below.
   links:
     - url: https://github.com/armyost/backstage-sample/blob/main/schemas/asyncapi-example.yaml
