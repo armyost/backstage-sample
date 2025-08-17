@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: microservice-a
+  description: MicroServiceA
+spec:
+  owner: scrum-team-a
