@@ -8,17 +8,17 @@ metadata:
       title: gRPC SourceCode Link
       icon: code
   dependencyOf:
-    - component:default/microservicesB
+    - component:default/microservices-b
   tags:
     - microservices-a
     - grpc
 spec:
   type: grpc
   lifecycle: production
-  owner: Scrum-Team-A
+  owner: scrum-team-a
   apiConsumedBy:
-    - microservicesB
-  system: SystemA
+    - microservices-b
+  system: system-a
   definition:
     $text: https://github.com/armyost/protobuf-sample/blob/main/src/hero/hero.proto
 
@@ -33,17 +33,17 @@ metadata:
       title: gRPC SourceCode Link
       icon: code
   dependencyOf:
-    - component:default/microservicesB
+    - component:default/microservices-b
   tagsList:
     - microservices-a
     - rest
 spec:
   type: openapi
   lifecycle: production
-  owner: Scrum-Team-A
+  owner: scrum-team-a
   apiConsumedBy:
-    - microservicesB
-  system: SystemA
+    - microservices-b
+  system: system-a
   definition: 
     $text: https://github.com/ocean-network-express/om-pom-bff-external/blob/develop/docs/swagger.yaml
 
@@ -58,17 +58,17 @@ metadata:
       title: graphql Spec
       icon: docs
   dependencyOf:
-    - component:default/microservicesB
+    - component:default/microservices-b
   tagsList:
     - microservices-a
     - graphql
 spec:
   type: graphql
   lifecycle: production
-  owner: Scrum-Team-A
+  owner: scrum-team-a
   apiConsumedBy:
-    - microservicesB
-  system: SystemA
+    - microservices-b
+  system: system-a
   definition: 
     $text: https://github.com/armyost/backstage-sample/blob/main/schemas/schema.gql
 
@@ -83,16 +83,16 @@ metadata:
       title: Async API Spec
       icon: docs
   dependencyOf:
-    - component:default/microservicesB
+    - component:default/microservices-b
   tagsList:
     - microservices-a
     - asyncapi
 spec:
   type: asyncapi
   lifecycle: production
-  owner: Scrum-Team-A
+  owner: scrum-team-a
   apiConsumedBy:
-    - microservicesB
-  system: SystemA
+    - microservices-b
+  system: system-a
   definition: 
     $text: https://github.com/armyost/backstage-sample/blob/main/schemas/asyncapi-example.yaml
