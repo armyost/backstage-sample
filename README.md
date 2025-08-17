@@ -1,0 +1,1 @@
+This is repository for example of backstage.
