@@ -34,7 +34,7 @@ metadata:
       icon: code
   dependencyOf:
     - component:default/microservices-b
-  tagsList:
+  tags:
     - microservices-a
     - rest
 spec:
@@ -59,7 +59,7 @@ metadata:
       icon: docs
   dependencyOf:
     - component:default/microservices-b
-  tagsList:
+  tags:
     - microservices-a
     - graphql
 spec:
@@ -84,7 +84,7 @@ metadata:
       icon: docs
   dependencyOf:
     - component:default/microservices-b
-  tagsList:
+  tags:
     - microservices-a
     - asyncapi
 spec:
