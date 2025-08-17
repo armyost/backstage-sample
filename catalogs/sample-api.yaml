@@ -10,7 +10,7 @@ metadata:
   dependencyOf:
     - component:default/microservicesB
   tags:
-    - microservicesA
+    - microservices-a
     - grpc
 spec:
   type: grpc
@@ -35,7 +35,7 @@ metadata:
   dependencyOf:
     - component:default/microservicesB
   tagsList:
-    - microservicesA
+    - microservices-a
     - rest
 spec:
   type: openapi
@@ -60,7 +60,7 @@ metadata:
   dependencyOf:
     - component:default/microservicesB
   tagsList:
-    - microservicesA
+    - microservices-a
     - graphql
 spec:
   type: graphql
@@ -85,7 +85,7 @@ metadata:
   dependencyOf:
     - component:default/microservicesB
   tagsList:
-    - microservicesA
+    - microservices-a
     - asyncapi
 spec:
   type: asyncapi
