@@ -1,0 +1,36 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: microservice-a
+  description: description    
+spec:
+  type: service
+  lifecycle: production
+  owner: scrum-team-a
+  system: system-a
+  providesApis:
+    - SAMPLE_GRPC_API_V1
+    - SAMPLE_REST_API_V1
+    - SAMPLE_GRAPHQL_API_V1
+    - SAMPLE_ASYNC_API_V1
+  dependencyOf:
+    - component:default/microservice-b
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: microservice-b
+  description: description    
+spec:
+  type: service
+  lifecycle: production
+  owner: scrum-team-b
+  system: system-b
+  consumesApis:
+    - SAMPLE_GRPC_API_V1
+    - SAMPLE_REST_API_V1
+    - SAMPLE_GRAPHQL_API_V1
+    - SAMPLE_ASYNC_API_V1
+  dependencyOn:
+    - component:default/microservice-a
