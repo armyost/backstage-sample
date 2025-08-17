@@ -1,0 +1,40 @@
+# Defines the available queries in the API
+type Query {
+  # Fetches a single user by their ID
+  user(id: ID!): User
+  # Fetches a list of all users
+  users: [User!]!
+  # Fetches a single post by its ID
+  post(id: ID!): Post
+  # Fetches a list of all posts
+  posts: [Post!]!
+}
+
+# Defines the available mutations (data modifications) in the API
+type Mutation {
+  # Creates a new user
+  createUser(name: String!, email: String!): User!
+  # Updates an existing user
+  updateUser(id: ID!, name: String, email: String): User!
+  # Deletes a user
+  deleteUser(id: ID!): Boolean!
+  # Creates a new post
+  createPost(title: String!, content: String!, authorId: ID!): Post!
+}
+
+# Defines the User type
+type User {
+  id: ID! # Unique identifier for the user (non-nullable)
+  name: String! # User's name (non-nullable)
+  email: String! # User's email (non-nullable)
+  posts: [Post!] # List of posts written by this user
+}
+
+# Defines the Post type
+type Post {
+  id: ID! # Unique identifier for the post (non-nullable)
+  title: String! # Post title (non-nullable)
+  content: String! # Post content (non-nullable)
+  author: User! # The author of the post (non-nullable)
+  createdAt: String! # Timestamp of when the post was created (non-nullable)
+}
