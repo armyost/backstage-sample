@@ -18,8 +18,4 @@ theme:
 
 plugins:
   - search
-
-markdown_extensions:
-  - admonition
-  - toc:
-      permalink: true
+  - techdocs-core
