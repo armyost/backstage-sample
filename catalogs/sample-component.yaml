@@ -2,7 +2,9 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: microservice-a
-  description: description    
+  description: description
+  techdocs:
+    - url: ./docs    
 spec:
   type: service
   lifecycle: production
