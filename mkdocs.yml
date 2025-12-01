@@ -9,12 +9,12 @@ nav:
   - Reference:
       - Overview: reference.md
 
-theme:
-  name: material
-  palette:
-    scheme: default
-    primary: indigo
-    accent: indigo
+# theme:
+#   name: material
+#   palette:
+#     scheme: default
+#     primary: indigo
+#     accent: indigo
 
 plugins:
   - search
