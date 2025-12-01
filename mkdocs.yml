@@ -1,0 +1,25 @@
+site_name: Backstage Sample
+site_description: Example MkDocs site for backstage-sample
+site_author: Your Name
+repo_url: https://github.com/your/repo
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Reference:
+      - Overview: reference.md
+
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: indigo
+    accent: indigo
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
