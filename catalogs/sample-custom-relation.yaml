@@ -3,7 +3,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: examples
+  name: examples-jpkim
 spec:
   owner: admin
 ---
@@ -11,7 +11,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: example-website
+  name: example-website-jpkim
   namespace: default
 spec:
   type: website
@@ -24,7 +24,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: example-grpc-api
+  name: example-grpc-api-jpkim
   namespace: default
 spec:
   type: grpc
@@ -46,7 +46,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
-  name: user-authentication
+  name: user-authentication-jpkim
   namespace: default
 spec:
   type: feature
@@ -61,7 +61,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
-  name: artists-db
+  name: artists-db-jpkim
   description: Stores artist details
 spec:
   type: database
