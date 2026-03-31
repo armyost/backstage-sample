@@ -4,4 +4,4 @@ metadata:
   name: system-a
   description: MicroServiceSystemA
 spec:
-  owner: scrum-team-a
+  owner: admin
