@@ -15,7 +15,7 @@ metadata:
 spec:
   type: grpc
   lifecycle: production
-  owner: scrum-team-a
+  owner: admin
   apiConsumedBy:
     - microservices-b
   system: system-a
@@ -40,7 +40,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: scrum-team-a
+  owner: admin
   apiConsumedBy:
     - microservices-b
   system: system-a
@@ -65,7 +65,7 @@ metadata:
 spec:
   type: graphql
   lifecycle: production
-  owner: scrum-team-a
+  owner: admin
   apiConsumedBy:
     - microservices-b
   system: system-a
@@ -90,7 +90,7 @@ metadata:
 spec:
   type: asyncapi
   lifecycle: production
-  owner: scrum-team-a
+  owner: admin
   apiConsumedBy:
     - microservices-b
   system: system-a
