@@ -8,7 +8,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: scrum-team-a
+  owner: admin
   system: system-a
   providesApis:
     - SAMPLE_GRPC_API_V1
@@ -27,7 +27,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: scrum-team-b
+  owner: admin
   system: system-b
   consumesApis:
     - SAMPLE_GRPC_API_V1
