@@ -5,6 +5,8 @@ metadata:
   description: description
   annotations:
     backstage.io/techdocs-ref: dir:../ 
+    kafka.apache.org/consumer-groups: sample-consumer-a
+
 spec:
   type: service
   lifecycle: production
