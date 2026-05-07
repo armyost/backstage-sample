@@ -9,7 +9,7 @@ metadata:
 
 spec:
   type: service
-  lifecycle: production
+  lifecycle: all
   owner: admin
   system: system-a
   providesApis:
@@ -32,7 +32,7 @@ metadata:
   description: description    
 spec:
   type: service
-  lifecycle: production
+  lifecycle: all
   owner: admin
   system: system-b
   consumesApis:
