@@ -99,6 +99,7 @@ spec:
     apiVersion: backstage.io/v1alpha1
 
 ---
+apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: EXPERIMENTAL_SAMPLE_GRPC_API_V1
