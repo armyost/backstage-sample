@@ -114,7 +114,7 @@ metadata:
     - grpc
 spec:
   type: grpc
-  lifecycle: production
+  lifecycle: experimental
   owner: admin
   apiConsumedBy:
     - microservices-b
@@ -139,7 +139,7 @@ metadata:
     - rest
 spec:
   type: openapi
-  lifecycle: production
+  lifecycle: experimental
   owner: admin
   apiConsumedBy:
     - microservices-b
@@ -164,7 +164,7 @@ metadata:
     - graphql
 spec:
   type: graphql
-  lifecycle: production
+  lifecycle: experimental
   owner: admin
   apiConsumedBy:
     - microservices-b
@@ -189,7 +189,7 @@ metadata:
     - asyncapi
 spec:
   type: asyncapi
-  lifecycle: production
+  lifecycle: experimental
   owner: admin
   apiConsumedBy:
     - microservices-b
