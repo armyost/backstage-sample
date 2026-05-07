@@ -13,10 +13,14 @@ spec:
   owner: admin
   system: system-a
   providesApis:
-    - SAMPLE_GRPC_API_V1
-    - SAMPLE_REST_API_V1
-    - SAMPLE_GRAPHQL_API_V1
-    - SAMPLE_ASYNC_API_V1
+    - PROD_SAMPLE_GRPC_API_V1
+    - PROD_SAMPLE_REST_API_V1
+    - PROD_SAMPLE_GRAPHQL_API_V1
+    - PROD_SAMPLE_ASYNC_API_V1    
+    - EXPERIMENTAL_SAMPLE_GRPC_API_V1
+    - EXPERIMENTAL_SAMPLE_REST_API_V1
+    - EXPERIMENTAL_SAMPLE_GRAPHQL_API_V1
+    - EXPERIMENTAL_SAMPLE_ASYNC_API_V1
   dependencyOf:
     - component:default/microservice-b
 
@@ -32,9 +36,13 @@ spec:
   owner: admin
   system: system-b
   consumesApis:
-    - SAMPLE_GRPC_API_V1
-    - SAMPLE_REST_API_V1
-    - SAMPLE_GRAPHQL_API_V1
-    - SAMPLE_ASYNC_API_V1
+    - PROD_SAMPLE_GRPC_API_V1
+    - PROD_SAMPLE_REST_API_V1
+    - PROD_SAMPLE_GRAPHQL_API_V1
+    - PROD_SAMPLE_ASYNC_API_V1
+    - EXPERIMENTAL_SAMPLE_GRPC_API_V1
+    - EXPERIMENTAL_SAMPLE_REST_API_V1
+    - EXPERIMENTAL_SAMPLE_GRAPHQL_API_V1
+    - EXPERIMENTAL_SAMPLE_ASYNC_API_V1
   dependencyOn:
     - component:default/microservice-a
