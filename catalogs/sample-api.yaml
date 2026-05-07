@@ -96,7 +96,6 @@ spec:
   system: system-a
   definition: 
     $text: https://github.com/armyost/backstage-sample/blob/main/schemas/asyncapi-example.yaml
-    apiVersion: backstage.io/v1alpha1
 
 ---
 apiVersion: backstage.io/v1alpha1
