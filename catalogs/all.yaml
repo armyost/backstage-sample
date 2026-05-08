@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: sample-catalogs
+  description: SAMPLE Catalogs
+spec:
+  targets:
+    - sample-api.yaml
+    - sample-component.yaml
+    - sample-custom-relation.yaml
+    - sample-system.yaml
+    
