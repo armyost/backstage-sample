@@ -5,8 +5,8 @@ metadata:
   description: SAMPLE Catalogs
 spec:
   targets:
-    - sample-api.yaml
-    - sample-component.yaml
-    - sample-custom-relation.yaml
-    - sample-system.yaml
+    - ./sample-api.yaml
+    - ./sample-component.yaml
+    - ./sample-custom-relation.yaml
+    - ./sample-system.yaml
     
